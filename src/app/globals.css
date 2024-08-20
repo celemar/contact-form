@@ -26,6 +26,7 @@ input {
 
 .required-asterisk::after {
   content: '*';
+  padding-left: 4px;
   color: hsl(169, 82%, 27%);;
 }
 
