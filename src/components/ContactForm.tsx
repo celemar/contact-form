@@ -163,8 +163,8 @@ export default function ContactForm() {
             htmlFor="consent"
             className="pl-3 select-none required-asterisk"
           >{isSubmitSuccessful 
-          ? 'I hereby consent to being contacted by the team ' 
-          :'I consent to being contacted by the team '}
+          ? 'I hereby consent to being contacted by the team' 
+          :'I consent to being contacted by the team'}
       
           </label>
         </div>
