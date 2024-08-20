@@ -10,13 +10,9 @@
 
 @layer base {
   .custom-focus {
-    @apply outline-none focus:outline-none focus-visible:ring-1 focus-visible:ring-green-600;
+    @apply outline-none focus:outline-none focus-visible:ring-1 focus-visible:ring-green-600 hover:border-clr-green-600;
   }
 } 
-
-input {
-  background: white;
-}
 
 .custom-bg:has(input:checked) {
   background: hsl(148, 38%, 91%);

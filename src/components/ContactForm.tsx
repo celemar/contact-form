@@ -23,9 +23,7 @@ export default function ContactForm() {
   };
   return (
     <section className="flex min-h-screen flex-col items-center justify-center p-4">
-      {isSubmitSuccessful && (
-        <SucessMessage/>
-      )}
+      {isSubmitSuccessful && (<SucessMessage/>)}
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="bg-white rounded-2xl p-6 md:p-10 text-[#2B4246] lg:w-[52%] lg:max-w-[730px] relative"
@@ -42,7 +40,7 @@ export default function ContactForm() {
               aria-invalid={errors.firstName ? "true" : "false"}
               type="text"
               className={`w-full mt-2 py-3 rounded-md border pl-6 ${
-                errors.firstName ? "border-red" : "border-gray-500"
+                errors.firstName ? "border-clr-red" : "border-clr-grey-500"
               } custom-focus bg-white`}
             />
             {errors.firstName && (
@@ -61,7 +59,7 @@ export default function ContactForm() {
               aria-invalid={errors.lastName ? "true" : "false"}
               type="text"
               className={`w-full mt-2 py-3 rounded-md border pl-6 ${
-                errors.lastName ? "border-red" : "border-gray-500"
+                errors.lastName ? "border-clr-red" : "border-clr-grey-500"
               } custom-focus`}
             />
             {errors.lastName && (
@@ -82,7 +80,7 @@ export default function ContactForm() {
             aria-invalid={errors.email ? "true" : "false"}
             type="email"
             className={`w-full mt-2 py-3 rounded-md border pl-6 ${
-              errors.email ? "border-red" : "border-gray-500"
+              errors.email ? "border-clr-red" : "border-clr-grey-500"
             } custom-focus`}
           />
           {errors.email && (
@@ -98,25 +96,25 @@ export default function ContactForm() {
               Query Type{" "}
             </legend>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="flex items-center pl-6 py-[.6rem] space-x-2 border border-gray-500 rounded-md text-lg custom-bg">
+              <div className="flex items-center pl-6 py-[.6rem] space-x-2 border border-clr-grey-500 rounded-md text-lg custom-bg">
                 <input
                   {...register("queryType")}
                   id="general"
                   value="general"
                   type="radio"
-                  className="outline-green-500"
+                  className="outline-clr-green-600"
                 />
                 <label htmlFor="general" className="select-none">
                   General Enquiry
                 </label>
               </div>
-              <div className="flex items-center pl-6 py-[.6rem] space-x-2 border border-gray-500 rounded-md text-lg custom-bg">
+              <div className="flex items-center pl-6 py-[.6rem] space-x-2 border border-clr-grey-500 rounded-md text-lg custom-bg">
                 <input
                   {...register("queryType")}
                   id="support"
                   value="support"
                   type="radio"
-                  className="outline-green-500"
+                  className="outline-clr-green-600"
                 />
                 <label htmlFor="support" className="select-none">
                   Support Request
@@ -144,7 +142,7 @@ export default function ContactForm() {
             aria-invalid={errors.message ? "true" : "false"}
             className={`w-full mt-2 p-2 rounded-md border  resize-none
           h-[240px] md:h-[105px] px-6 ${
-            errors.message ? "border-red" : "border-grey-500"
+            errors.message ? "border-clr-red" : "border-clr-grey-500"
           } custom-focus`}
           ></textarea>
           {errors.message && (
@@ -159,7 +157,7 @@ export default function ContactForm() {
             id="consent"
             aria-invalid={errors.consent ? "true" : "false"}
             type="checkbox"
-            className="w-[25px] h-[25px] md:w-[18px] md:h-[18px] outline-green-500"
+            className="w-[25px] h-[25px] md:w-[18px] md:h-[18px] outline-clr-green-600"
           />
           <label
             htmlFor="consent"
@@ -178,7 +176,7 @@ export default function ContactForm() {
         <button
           disabled={isSubmitting}
           type="submit"
-          className="w-full mt-10 font-bold bg-green-600 hover:bg-[#063f36] text-white py-4 rounded-md text-sm md:text-lg"
+          className="w-full mt-10 font-bold bg-clr-green-600 hover:bg-[#063f36] text-white py-4 rounded-md text-sm md:text-lg"
         >
           Submit
         </button>

@@ -9,12 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'green-200': 'hsl(148, 38%, 91%)',
-        'green-600': 'hsl(169, 82%, 27%)',
-        'red': 'hsl(0, 66%, 54%)',
-        'white': 'hsl(0, 0%, 100%)',
-        'grey-500': 'hsl(186, 15%, 59%)',
-        'grey-900': 'hsl(187, 24%, 22%)',
+        'clr-green-200': 'hsl(148, 38%, 91%)',
+        'clr-green-600': 'hsl(169, 82%, 27%)',
+        'clr-red': 'hsl(0, 66%, 54%)',
+        'clr-grey-500': 'hsl(186, 15%, 59%)',
+        'clr-grey-900': 'hsl(187, 24%, 22%)',
       },
     },
   },

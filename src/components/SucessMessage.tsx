@@ -1,7 +1,7 @@
 export default function SucessMessage() {
   return (
     <div
-      className="text-white bg-[#2a4244] rounded-xl md:max-w-[450px] p-6"
+      className="text-white bg-[#2a4244] rounded-2xl md:max-w-[450px] p-6"
       role="alert"
       aria-live="polite"
       aria-atomic="true"
@@ -21,7 +21,7 @@ export default function SucessMessage() {
         </svg>
         <h2 className="font-bold text-lg pl-3">Message Sent!</h2>
       </div>
-      <p className="pt-2 text-green-200">
+      <p className="pt-2 text-clr-green-200">
       Thanks for completing the form. We&apos;ll be in touch soon!
       </p>
     </div>
