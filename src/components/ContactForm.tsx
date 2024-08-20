@@ -23,7 +23,7 @@ export default function ContactForm() {
   };
   return (
     <section className="flex min-h-screen flex-col items-center justify-center p-4">
-      {isSubmitSuccessful && (<SucessMessage/>)}
+      {isSubmitSuccessful && <SucessMessage />}
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="bg-white rounded-2xl p-6 md:p-10 text-[#2B4246] lg:w-[52%] lg:max-w-[730px] relative"
@@ -44,7 +44,7 @@ export default function ContactForm() {
               } custom-focus bg-white`}
             />
             {errors.firstName && (
-              <p className="text-red text-sm md:text-base pt-2">
+              <p className="text-clr-red text-sm md:text-base pt-2">
                 {errors.firstName.message}
               </p>
             )}
@@ -63,7 +63,7 @@ export default function ContactForm() {
               } custom-focus`}
             />
             {errors.lastName && (
-              <p className="text-red text-sm md:text-base pt-2">
+              <p className="text-clr-red text-sm md:text-base pt-2">
                 {errors.lastName.message}
               </p>
             )}
@@ -84,7 +84,7 @@ export default function ContactForm() {
             } custom-focus`}
           />
           {errors.email && (
-            <p className="text-red text-sm md:text-base pt-2">
+            <p className="text-clr-red text-sm md:text-base pt-2">
               {errors.email.message}
             </p>
           )}
@@ -125,7 +125,7 @@ export default function ContactForm() {
           {errors.queryType && (
             <p
               id="queryType-error"
-              className="text-red text-sm md:text-base pt-2"
+              className="text-clr-red text-sm md:text-base pt-2"
             >
               {errors.queryType.message}
             </p>
@@ -146,7 +146,7 @@ export default function ContactForm() {
           } custom-focus`}
           ></textarea>
           {errors.message && (
-            <p className="text-red text-sm md:text-base pt-2">
+            <p className="text-clr-red text-sm md:text-base pt-2">
               {errors.message.message}
             </p>
           )}
@@ -162,14 +162,14 @@ export default function ContactForm() {
           <label
             htmlFor="consent"
             className="pl-3 select-none required-asterisk"
-          >{isSubmitSuccessful 
-          ? 'I hereby consent to being contacted by the team' 
-          :'I consent to being contacted by the team'}
-      
+          >
+            {isSubmitSuccessful
+              ? "I hereby consent to being contacted by the team"
+              : "I consent to being contacted by the team"}
           </label>
         </div>
         {errors.consent && (
-          <p className="text-red text-sm md:text-base pt-2">
+          <p className="text-clr-red text-sm md:text-base pt-2">
             {errors.consent.message}
           </p>
         )}
