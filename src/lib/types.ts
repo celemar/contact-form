@@ -14,4 +14,5 @@ export const contactFormSchema = z.object({
       message: "To submit this form, please consent to being contacted",
     }),
 });
+
 export type TContactFormSchema = z.infer<typeof contactFormSchema>;

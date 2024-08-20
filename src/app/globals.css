@@ -29,7 +29,6 @@ input {
   color: hsl(169, 82%, 27%);;
 }
 
-
 [type=radio],
 [type=checkbox] {
   cursor: pointer;
