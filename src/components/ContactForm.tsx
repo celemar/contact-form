@@ -158,7 +158,6 @@ export default function ContactForm() {
           htmlFor="consent"
           className="pl-3 select-none required-asterisk inner-text"
         >
-          {/*CHANGE THE NAME OF INNER TEXT CLASS */}
           <span className="sr-only">
             I consent to being contacted by the team *
           </span>
