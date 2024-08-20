@@ -9,7 +9,7 @@ const karla = Karla({
 
 export const metadata: Metadata = {
   title: "Contact Form",
-  description: "Contact Form - Next, TS, Tailwind, React hook form, zod",
+  description: "Contact Form - Next.js, Tailwind, React hook form, Zod",
 };
 
 export default function RootLayout({
