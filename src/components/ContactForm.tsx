@@ -28,7 +28,9 @@ export default function ContactForm() {
         onSubmit={handleSubmit(onSubmit)}
         className="bg-white rounded-2xl p-6 md:p-10 text-[#2B4246] lg:w-[52%] lg:max-w-[730px] relative"
       >
-        <h1 className="w-full pb-8 font-bold text-3xl">Contact Us</h1>
+        <h1 className="w-full pb-8 font-bold text-3xl md:text-[2rem]">
+          Contact Us
+        </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-4 mb-4">
           <div>
             <label htmlFor="firstName" className="required-asterisk">
